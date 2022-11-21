@@ -18,9 +18,13 @@ from django.urls import path, include
 from rest_framework import routers
 
 from api1.views import ImovelViewSet
+from api2.views import AnuncioViewSet
+from api3.views import ReservaViewSet
 
 router = routers.DefaultRouter()
 router.register(r'imoveis', ImovelViewSet)
+router.register(r'anuncios', AnuncioViewSet)
+router.register(r'reserva', ReservaViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),

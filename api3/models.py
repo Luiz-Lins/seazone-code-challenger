@@ -2,7 +2,7 @@ from django.db import models
 
 
 class Reserva(models.Model):
-    codigo_da_reserva = models.PositiveIntegerField()
+    codigo_da_reserva = models.PositiveIntegerField(auto_created=True)
     reserva_pertence_ao_anuncio = models.PositiveIntegerField()
     check_in = models.DateField()
     check_out = models.DateField()

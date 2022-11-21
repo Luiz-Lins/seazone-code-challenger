@@ -11,7 +11,7 @@ class ImovelSerializer(serializers.HyperlinkedModelSerializer):
             'limite_de_hospedes',
             'quantidade_toilet',
             'pet_friendly',
-            'tx_de_limpeza',
+            # 'tx_de_limpeza',
             'data_de_ativacao',
             'data_hora_de_criacao',
             'data_hora_de_atualizacao',

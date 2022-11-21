@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'api2',
     'api3',
     'rest_framework',
+    'django_seed',
 ]
 
 MIDDLEWARE = [
