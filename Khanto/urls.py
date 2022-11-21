@@ -25,5 +25,7 @@ router.register(r'imoveis', ImovelViewSet)
 urlpatterns = [
     path('', include(router.urls)),
     path('admin/', admin.site.urls),
-    path('api-auth/', include('rest_framework.urls'))
+    path('imovel/', include('rest_framework.urls')),
+    path('anuncio/', include('rest_framework.urls')),
+    path('reserva/', include('rest_framework.urls')),
 ]

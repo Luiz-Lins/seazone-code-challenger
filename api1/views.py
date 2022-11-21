@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from rest_framework import viewsets
-from .models import Imovel
-from .serializers import ImovelSerializer
+from api1.models import Imovel
+from api1.serializers import ImovelSerializer
 
 
 class ImovelViewSet(viewsets.ModelViewSet):
