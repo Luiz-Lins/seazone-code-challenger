@@ -1,6 +1,5 @@
 from django.http import HttpResponse
-from django.shortcuts import render
-from rest_framework import viewsets, response
+from rest_framework import viewsets
 from rest_framework.decorators import action
 
 from api1.models import Imovel
@@ -13,20 +12,20 @@ class ImovelViewSet(viewsets.ModelViewSet):
 
     @action(detail=True, methods=['get'])
     def get(self, request):
-        return HttpResponse('ok')
+        return Imovel
 
     @action(detail=True, methods=['post'])
     def post(self, request):
-        return HttpResponse('ok')
+        return Imovel
 
     @action(detail=True, methods=['put'])
     def put(self, request, pk=None):
-        return HttpResponse('ok')
+        return Imovel
 
     @action(detail=True, methods=['patch'])
     def patch(self, request, pk=None):
-        return HttpResponse('ok')
+        return Imovel
 
     @action(detail=True, methods=['delete'])
     def delete(self, request, pk=None):
-        return HttpResponse('ok')
+        return Imovel
