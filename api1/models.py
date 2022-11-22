@@ -6,7 +6,7 @@ class Imovel(models.Model):
     limite_de_hospedes = models.PositiveIntegerField()
     quantidade_toilet = models.PositiveIntegerField()
     pet_friendly = models.BooleanField()
-    # tx_de_limpeza = models.DecimalField(max_digits=3, decimal_places=2)
+    tx_de_limpeza = models.DecimalField(max_digits=3, decimal_places=2)
     data_de_ativacao = models.DateField(auto_now=True)
     data_hora_de_criacao = models.DateTimeField(auto_now=True)
     data_hora_de_atualizacao = models.DateTimeField(auto_now=True)
