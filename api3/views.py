@@ -10,22 +10,22 @@ class ReservaViewSet(viewsets.ModelViewSet):
     queryset = Reserva.objects.all()
     serializer_class = ReservaSerializer
 
-    # @action(detail=True, methods=['get'])
-    # def get(self, request):
-    #     return HttpResponse('ok')
-    #
-    # @action(detail=True, methods=['post'])
-    # def post(self, request):
-    #     return HttpResponse('ok')
-    #
-    # @action(detail=True, methods=['put'])
-    # def put(self, request, pk=None):
-    #     return HttpResponse('ok')
-    #
-    # @action(detail=True, methods=['patch'])
-    # def patch(self, request, pk=None):
-    #     return HttpResponse('ok')
-    #
-    # @action(detail=True, methods=['delete'])
-    # def delete(self, request, pk=None):
-    #     return HttpResponse(status=204)
+    @action(detail=True, methods=['get'])
+    def get(self, request):
+        return HttpResponse('ok')
+
+    @action(detail=True, methods=['post'])
+    def post(self, request):
+        return HttpResponse('ok')
+
+    @action(detail=True, methods=['put'])
+    def put(self, request, pk=None):
+        return HttpResponse('ok')
+
+    @action(detail=True, methods=['patch'])
+    def patch(self, request, pk=None):
+        return HttpResponse('ok')
+
+    @action(detail=True, methods=['delete'])
+    def delete(self, request, pk=None):
+        return HttpResponse(status=204)
