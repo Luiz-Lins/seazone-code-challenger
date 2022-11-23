@@ -31,13 +31,13 @@ $ python manage.py migrate
 
 # Alimente o banco de dados para cada API com os seguintes comando:
   - API1 - Imovel
-    $ manage.py seed api1 --number=5
+    $ python manage.py seed api1 --number=5
 
   - API2 - Anuncio
-    $ manage.py seed api2 --number=3
+    $ python manage.py seed api2 --number=3
 
   - API3 - Reserva
-    $ manage.py seed api3 --number=8
+    $ python manage.py seed api3 --number=8
 
 # Crie um admin (Opcional)
 $ python manage.py createsuperuser
