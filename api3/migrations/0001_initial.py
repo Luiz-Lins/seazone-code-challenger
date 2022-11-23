@@ -12,15 +12,16 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='Imovel',
+            name='Reserva',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('codigo_imovel', models.PositiveIntegerField(auto_created=True)),
-                ('limite_de_hospedes', models.PositiveIntegerField()),
-                ('quantidade_toilet', models.PositiveIntegerField()),
-                ('pet_friendly', models.BooleanField()),
-                ('tx_de_limpeza', models.DecimalField(decimal_places=2, max_digits=5)),
-                ('data_de_ativacao', models.DateField(auto_now=True)),
+                ('codigo_da_reserva', models.PositiveIntegerField(auto_created=True)),
+                ('reserva_pertence_ao_anuncio', models.PositiveIntegerField()),
+                ('check_in', models.DateField()),
+                ('check_out', models.DateField()),
+                ('preco_total', models.DecimalField(decimal_places=2, max_digits=8)),
+                ('comentario', models.CharField(max_length=320)),
+                ('numero_de_hospedes', models.PositiveIntegerField()),
                 ('data_hora_de_criacao', models.DateTimeField(auto_now=True)),
                 ('data_hora_de_atualizacao', models.DateTimeField(auto_now=True)),
             ],
