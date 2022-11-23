@@ -26,7 +26,7 @@ $ .\.venv\Scripts\activate
 # Instale as dependências
 $ pip install -r requirements.txt
 
-# Faça as migrações para o Banco de dados
+# Faça as migrações para o Banco de dados 
 $ python manage.py migrate
 
 # Alimente o banco de dados para cada API com os seguintes comando:
