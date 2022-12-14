@@ -1,5 +1,5 @@
-# Seazone Code Challenger
-O objetivo desse repositório é a execução do Seazone code challenger.
+# Sz Code Challenger
+O objetivo desse repositório é a execução do Sz code challenger.
 O Desafio consiste na criação de três API's-Rest 
 
 ### Pré-requisitos
@@ -15,7 +15,7 @@ Para prosseguir observe as seguintes instruções:
 ```bash
 # Clone este repositório
 
-$ git clone <https://github.com/Luiz-Lins/seazone-code-challenger.git>
+$ git clone <https://github.com/Luiz-Lins/sz-code-challenger.git>
 
 # Crie o ambiente virtual na raiz do projeto
 $ python -m venv .venv
@@ -29,7 +29,7 @@ $ pip install -r requirements.txt
 # Faça as migrações para o Banco de dados 
 $ python manage.py migrate
 
-# Alimente o banco de dados para cada API com os seguintes comando:
+# Alimente o banco de dados para cada API com os seguintes comandos:
   - API1 - Imovel
     $ python manage.py seed api1 --number=5
 

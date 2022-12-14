@@ -1,8 +1,10 @@
 from django.db import models
 
+import api1.models
+
 
 class Anuncio(models.Model):
-    anuncio_pertence_ao_imovel = models.PositiveIntegerField()
+    anuncio_pertence_ao_imovel = models.CharField(max_length=15)
     plataforma_anuncio_publicado = models.CharField(max_length=15)
     tx_da_plataforma = models.DecimalField(max_digits=4, decimal_places=2)
     data_hora_de_criacao = models.DateTimeField(auto_now=True)

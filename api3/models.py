@@ -16,7 +16,7 @@ class Reserva(models.Model):
     def __str__(self):
         return self.codigo_da_reserva
 
-    def validate_check_in(check_in, check_out):
-        if check_in > check_out:
-            raise MinValueValidator((f'data de check-in é anterior ao check-out'),
-                                    params={'value': Reserva}, )
+    # def validate_check_in(check_in, check_out):
+    #     if check_in > check_out:
+    #         raise MinValueValidator((f'data de check-in é anterior ao check-out'),
+    #                                 params={'value': Reserva}, )
